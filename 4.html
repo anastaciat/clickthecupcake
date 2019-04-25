@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- Clicker Game Template by Mike Henry <mikeshenry@gmail.com> -->
+	  <!-- Available from https://github.com/mashmac2/clicker-game-template -->
+	  <!-- You have permission to reuse this code for non-commercial purposes with attribution -->
+		<title>Click the cupcake</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- adding jQuery, Bootstrap, and Font Awesome -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+		</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!-- end adding jQuery, Bootstrap, and Font Awesome -->
+	</head>
+	<body>
+
+		<div class="row" id="heading">
+			<div id="content" class="col-md-6" style="margin-top: 5%">
+				<!--You could put status messages here -->
+				<p id="topic" class="text-center" style="font-size: 140%;">Your button has no name!</p>
+				<p class="one text-center" style="font-size: 140%;">Click the cupcake!</p>
+			</div>
+			<div id="progress-bar" class="col-md-3">
+			<img src="avocado.png" class="img-responsive" style=" width: 80%; height: 80%;">
+				<!--You could put game progress here -->
+			</div>
+		</div>
+			
+		    <div class="row">
+			<div class="options col-md-3 col-md-offset-1">
+			<a href="2.html">
+			<img src="2.png" class="img-responsive animation1" style="width: 40%; height: 40%; margin-top: 15%">
+			</a>
+			<a href="3.html">
+            <img src="3.png" class="img-responsive animation1" style="width: 40%; height: 40%; margin-top: 20%">
+			</a>
+            </div>
+			<div id="clicker" class="col-md-4">
+				<button id="clicks" class="btn btn-primary" name="clicks" onclick="increment(clicks)" style="background-color: white;"><img src="4.png" class="img-responsive"/></button>
+				<p>Total clicks: <span id="clicks-status">0</span>
+			</div>
+			<div class="options col-md-2 col-md-offset-2">
+			<a href="index.html">
+	<img src="1.png" class="img-responsive animation2" style="width: 70%; height: 70%; margin-top: 35%">
+			</a>
+			<a href="5.html">
+	<img src="5.png" class="img-responsive animation2" style="width: 70%; height: 70%; margin-top: 30%;">
+			</a>
+			</div>			
+		    </div>
+		
+		
+		
+		<div class="row" id="footer">
+		  <div class="col-md-6">
+		    <i>Clicker Game Template by Mike Henry; &copy; 2019</i>
+			<i class="fas fa-birthday-cake"></i>
+			<i class="fas fa-candy-cane"></i>
+			<i class="fas fa-cookie"></i>
+			<i class="fas fa-ice-cream"></i>
+			<i class="fas fa-apple-alt"></i>
+		  </div>
+		  <div class="col-md-6">
+		    <span id="saving-status-2">
+		       Saved
+		    </span>
+		  </div>
+		</div>
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+	</body>
+</html>
